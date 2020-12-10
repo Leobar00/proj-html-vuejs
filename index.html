@@ -9,6 +9,8 @@
 
         <!-- Font-awesome CDN -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <!-- Font awesome last  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,17 +21,24 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
         <!-- Vue.js CDN -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <!-- font google  -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@200;500&display=swap" rel="stylesheet">
         <script src="js/function.js" charset="utf-8"></script>
-        <title></title>
+        <title>Takeout</title>
     </head>
     <body>
-        <div id="root">
+        <!-- root per il collegamento con vue  -->
+        <div id="root"> 
             <header>
+                <!-- navbar con logo e menu  -->
                 <div class="nav-bar">
                     <div class="center d-flex">
+                        <!-- logo dell'azienda  -->
                         <span class="logo">
                             <img src="img/takeout-logo-2x-200x43.png" alt="">
                         </span>
+                        <!-- creazione menu con vue js  -->
                         <span class="menu">
                             <template v-for="link in headerLink">
                                 <a href="#" v-html="link"></a>
@@ -37,23 +46,148 @@
 
                         </span>
                     </div>
-
+                    <!-- sezione del jumbotron  -->
                     <div class="jumbotron center">
                         <div class="jumbo-cont">
-                            <h2>Hungry?</h2><br>
-                            <h1>Great Food</h1><br>
+                            <h2>Hungry? 
+                            <h1>Great Food</h1>
                             <h1>Delivered</h1><br>
-                            <button><strong>VIEW YOUR MENU </strong><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+                            </h2>
+                            
+                            
+                            <button class="bottone"><strong>VIEW YOUR MENU </strong><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
 
                         </div>
                     </div>
+                    <!-- cerchio in alto a destra  -->
                     <div class="add">
                         <i class="fa fa-plus" aria-hidden="true"></i>
                         
                     </div>
                 </div>
-
             </header>
+            <!-- fine header  -->
+
+            <!-- inizio del main  -->
+            <main>
+                <!-- barra servizi -->
+                <div class="option center">
+                    <ul>
+                        <li>
+                            <i class="far fa-clock"></i></i>
+                            <small> 24/7 DELIVERY</small>
+                        </li>
+                        <li>
+                            <i class="fas fa-hamburger"></i>
+                            <small> OVER 100 DISHES</small>
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-alt"></i>
+                            <small> IN APP ORDERING</small>
+                        </li>
+                        <li>
+                            <i class="fas fa-car"></i>
+                            <small>FAST DELIVERING</small>
+                        </li>
+                    </ul>
+                </div>
+                <!-- popular dishes cards -->
+                <div class="popular-dishes center">
+                    <div class="titolo text-center">
+                        <h1>Our Most Popular Dishes</h1>
+                    </div>
+                    <div class="popular-cards">
+                        
+                        <div class="card-food">
+                            <div class="image-food">
+                                <img src="img\skin-on-fries-400x571.jpg" alt="">
+                            </div>
+                            <div class="description-food">
+                                <h3>Skin On Fries</h3>
+                                <small>$3.00 - $6.00</small>
+                            </div>
+                        </div>
+                        <div class="card-food">
+                            <div class="image-food">
+                                <img src="img\choco-cookie-frappe.jpg" alt="">
+                            </div>
+                            <div class="description-food">
+                                <h3>Choco Cookie Frappe</h3>
+                                <small>$4.99</small>
+                            </div>
+                        </div>
+                        <div class="card-food">
+                            <div class="image-food">
+                                <img src="img\donut-burger-400x571.jpg" alt="">
+                            </div>
+                            <div class="description-food">
+                                <h3>The Donut Burger</h3>
+                                <small>$6.99</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- button per ordinare  -->
+                    <div class="center text-center">
+                        <button class="bottone "><strong>START YOUR ORDER</strong><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></button>
+
+                    </div>
+                </div>
+                <!-- immagine con sconto 20% ondulata  -->
+                <div class="discount-20">
+                    <svg class="curved fusion-waves-opacity-candy" fill="#fff" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" viewBox="0 1 1024 216"
+                        preserveAspectRatio="none">
+                        <path class="st0"
+                            d="M0 215.4c19.4.5 38.7 1.6 57.7.3 206.6-15 248.5-126.6 455-143.8 184.8-15.5 285.7 60.9 464.3 41.3 16.9-1.8 32.5-4.4 47.1-7.6L1024 .4H0v215z" />
+                        <path class="st1"
+                            d="M0 196.4c30.2 1.6 59.6 1.6 86.8-.4C293.4 180.9 284.1 73.4 490.7 56.2c184.9-15.5 278.5 58.2 457.1 38.4 28.3-3.2 53.5-8.2 76.2-14.6V.256H0V196.4z" />
+                        <path class="st2"
+                            d="M0 169.8c22.2.3 43.8-.2 64.2-1.7C270.8 153.1 262 55.6 468.6 38.4 653.4 22.9 695.4 89.5 874 69.7c54.8-6 104.9-18.3 150-33.7V.256H0V169.8z" />
+                        <path class="st3"
+                            d="M0 162.1c4-.2 8-.4 11.9-.7C218.4 146.3 239.8 37 446.4 19.8 631.3 4.3 672.7 60.9 851.3 41.1c64-7.2 121.9-20.8 172.7-37.9V.156H0V162.1z" />
+                        </svg>
+                </div>
+                <!-- categorie del menu  -->
+                <div class="menu-categories center">
+                    <div class="container-categories ">
+                        <div class="titolo">
+                            <h1>Menu Categories</h1>
+                        </div>
+                        <button class="bottone"><strong>VIEW THE FULL MENU</strong><i class="fa fa-arrow-circle-right"
+                                aria-hidden="true"></i></button>
+                    </div>
+                    <div class="cards-categories">
+                        <template v-for="image in imageCategories">
+                            <div class="cards">
+                                <img :src="image.url" alt="">
+                                <h3 v-text="image.name"></h3>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <!-- simboli dei prodotti  -->
+                <div class="symbol">
+                    <img src="img/icon.png" alt="">
+                </div>
+                <!-- install the app  -->
+                <div class="app">
+                    <div class="text-app center">
+                        <h3>Download Our <br>
+                            <h1>Ordering App</h1>
+
+                        </h3>
+                        <div class="store-image">
+                            <img src="img/app-store-badge-200x67.png" alt="">
+                            <img src="img/play-store-badge-200x67.png" alt="">
+
+                        </div>
+                    </div>
+                </div>
+                
+
+
+            </main>
+
+
 
 
 

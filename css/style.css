@@ -4,11 +4,11 @@
   padding: 0;
 }
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Barlow', sans-serif;
 }
 
 .center{
-    width: 80vw;
+    width: 70vw;
     border: 1px solid black;
     margin: auto;
 }
@@ -33,23 +33,25 @@ body{
 .jumbo-cont h1{
     font-size: 80px;
     color: white;
+    font-weight: 900;
+    
 }
 .jumbo-cont h1:first-of-type{
     color: #fcdc31;
 }
-.jumbo-cont button{
+.bottone{
     background-color: #ce1a26;
     border-radius: 50px;
     padding: 10px 20px;
     color: white;
     border: 1px solid #ce1a26;
-    margin-top: 20px;
+    cursor: pointer;
     
 }
-.jumbo-cont button:hover{
+button:hover{
     background-color: #bf1e23;
 }
-.jumbo-cont strong{
+button strong{
     margin-right: 5px;
 }
 
@@ -90,6 +92,7 @@ body{
     top: 10px;
     border-radius: 100%;
     background-color: #ce1a26;   
+    position: fixed;
 }
 .add > *{
     position: absolute;
@@ -99,5 +102,133 @@ body{
     color: white;
     font-size: 10px;
 }
+.option{
+    position: relative;
+    top:-30px;
+    left: 50%;
+    transform: translate(-70.7%);
+    background-color: white;
+}
+
+.option ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.option li{
+    padding: 40px;
+}
+.option small{
+    color: #555454;
+    font-weight: 600;
+}
+.titolo{
+    margin-bottom: 80px;
+    font-size: 22px;
+}
+
+.popular-cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card-food img{
+    width: 370px;
+    cursor: pointer;
+}
+.description-food{
+    text-align: center;
+}
+.description-food h3{
+    font-size: 30px;
+    margin:20px 15px;
+}
+
+.description-food small{
+    font-size: 18px;
+    color:#cc1a26;
+    
+    
+}
+.text-center{
+    text-align: center;
+    margin-top: 20px;
+}
+.discount-20{
+    height: 600px;
+}
+.curved{
+    background-image: url('../img/first-order-background-scaled.jpg');
+}
+.container-categories{
+    position: relative;
+}
+.container-categories h1{
+    margin-top: 50px;
+}
+.container-categories button:last-child{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.cards-categories{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+.cards{
+    width: calc(100% / 4.2 );
+    height: 240px ;
+    margin: 10px 0px;
+    position: relative;
+}
+.cards img{
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.7);
+    cursor: pointer;
+}
+.cards h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+.symbol{
+    display: flex;
+    justify-content: center;
+}
+.app{
+    height: 500px;
+    background-image: url('../img/app-ordering-scaled.jpg');
+    background-size: cover;
+    margin-bottom: 100px;
+}
+.text-app{
+    height: 500px;
+    
+}
+.text-app h3{
+    margin-top: 100px;
+    font-size: 35px;
+    color: white;
+}
+.text-app  h1{
+    font-size: 70px;
+    color: #fcdc31;
+    font-weight: 900;
+    margin-bottom: 50px;
+
+}
+.store-image img{
+    width: 170px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+
 
 
