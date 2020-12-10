@@ -3,6 +3,12 @@ const app = new Vue({
     data:{
         numberHeaderLink: 6,
         headerLink: [...link],
-        imageCategories:[...image]
+        imageCategories:[...image],
+        active: false
+    },
+    methods: {
+        mouseOver: function () {
+            this.active = !this.active;
+        }
     }
 })

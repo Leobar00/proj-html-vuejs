@@ -2,14 +2,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 body{
   font-family: 'Barlow', sans-serif;
 }
 
 .center{
-    width: 70vw;
-    border: 1px solid black;
+    width: 75vw;
     margin: auto;
 }
 .nav-bar{
@@ -80,6 +80,10 @@ button strong{
 .menu a:first-child{
     color: #fcdc31;
 }
+.menu a:hover{
+    color: #fcdc31;
+
+}
 .d-flex{
     display: flex;
     justify-content: space-between;
@@ -106,7 +110,7 @@ button strong{
     position: relative;
     top:-30px;
     left: 50%;
-    transform: translate(-70.7%);
+    transform: translate(-66%);
     background-color: white;
 }
 
@@ -125,7 +129,7 @@ button strong{
     font-weight: 600;
 }
 .titolo{
-    margin-bottom: 80px;
+    margin-bottom: 40px;
     font-size: 22px;
 }
 
@@ -133,9 +137,50 @@ button strong{
     display: flex;
     justify-content: space-between;
 }
+.image-food{
+    position: relative;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    position: relative;
+}
+.circle i{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.add-cart{ 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+    transition: 1s;
+    
+}
+.image-food:hover .add-cart{
+    opacity: 1;
+}
+
+.image-food:hover img {
+  opacity: 0.9;
+}
+
 .card-food img{
     width: 370px;
     cursor: pointer;
+    opacity: 1;
+    
+}
+.card-food img:hover{
+    filter: brightness(0.7);
+    background-color: transparent;
+    
 }
 .description-food{
     text-align: center;
@@ -155,12 +200,24 @@ button strong{
     text-align: center;
     margin-top: 20px;
 }
+.text-center button{
+    margin: 40px 0;
+}
 .discount-20{
-    height: 600px;
+    height: 400px;
+    margin: 80px 0;
 }
-.curved{
+/* .curved{
     background-image: url('../img/first-order-background-scaled.jpg');
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+} */
+.discount-20 img{
+    width: 100%;
+    height: 100%;
 }
+
 .container-categories{
     position: relative;
 }
@@ -200,18 +257,21 @@ button strong{
 .symbol{
     display: flex;
     justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
 }
 .app{
     height: 500px;
     background-image: url('../img/app-ordering-scaled.jpg');
     background-size: cover;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 .text-app{
     height: 500px;
     
 }
 .text-app h3{
+    padding-top: 80px;
     margin-top: 100px;
     font-size: 35px;
     color: white;
@@ -228,7 +288,85 @@ button strong{
     margin-right: 20px;
     cursor: pointer;
 }
+.news-card{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.news-one{
+    width: 48%;
+    text-align: center;
+}
+.news-one img{
+    height: 400px;
+    width: 100%;
+    transition: 2s;
+    
+}
+.news-one img:hover{
+    filter: brightness(0.7);
+}
+.news-one h1{
+    margin: 20px 0;
+}
 
+footer{
+    height: 1300px;
+    background-image: url('../img/footer-background-scaled.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.top-footer{
+    height: 40%;
+    border: 1px solid yellow;
+}
+.bottom-footer{
+    height: 60%;
+    text-align: center;
+    color: white;
+    
+}
+.bottom-footer img{
+    margin: 30px 0;
+}
+.bottom-footer h1{
+    color:#fcdc31 ;
+    font-size: 50px;
+    margin: 20px 0;
+}
+.bottom-footer input{
+    margin-top: 30px;
+    width: 36%;
+    border-radius: 50px;
+    padding: 10px;
+    border: 1px solid white;
+}
+.bottom-footer input:last-child{
+    background-color:#ce1a26 ;
+    color: white;
+    border: 1px solid #ce1a26;
+    cursor: pointer;
+    
+}
+.social-icons{
+    color: white;
+    margin: 40px 0;
+    
+}
+.social-icons i{
+    margin:20px 5px;
+    cursor: pointer;
+}
 
-
-
+.social-icons i:hover{
+    opacity: 0.5;
+}
+.bottom-footer small{
+    color: #fcdc31;
+}
+.bottom-footer small:nth-child(2){
+    color:white
+}
+.bottom-footer small:nth-child(1){
+    color:white
+}
