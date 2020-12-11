@@ -4,7 +4,13 @@ const app = new Vue({
         numberHeaderLink: 6,
         headerLink: [...link],
         imageCategories:[...image],
-        active: false
+        active: false,
+        orderOnline:[...online],
+        navigate:[...navigate],
+        information:[...information],
+        opening:[...opening],
+        voucher:[...voucher]
+
     },
     methods: {
         mouseOver: function () {

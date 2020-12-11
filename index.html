@@ -36,7 +36,7 @@
                     <div class="center d-flex">
                         <!-- logo dell'azienda  -->
                         <span class="logo">
-                            <img src="img/takeout-logo-2x-200x43.png" alt="">
+                            <img src="img/takeout-logo-2x-400x85.png" alt="">
                         </span>
                         <!-- creazione menu con vue js  -->
                         <span class="menu">
@@ -63,6 +63,14 @@
                     <div class="add">
                         <i class="fa fa-plus" aria-hidden="true"></i>
                         
+                    </div>
+                    <div class="square">
+                        <i class="fab fa-artstation fa-2x"></i><br>
+                        <small>Demos</small>
+                    </div>
+                    <div class="square-two">
+                        <i class="fas fa-shopping-cart fa-2x"></i> <br>
+                        <small>Buy Now</small>
                     </div>
                 </div>
             </header>
@@ -238,6 +246,52 @@
             <!-- inizio del footer  -->
             <footer>
                 <div class="top-footer">
+                    <ul>
+                        <li><h3>ORDER ONLINE</h3></li> <br>
+                        <template v-for="el in orderOnline">
+                            <li ><a href="#">{{el}}</a></li> 
+                        </template>
+                    </ul>
+                    <ul>
+                        <li><h3>NAVIGATE</h3></li> <br>
+                        <template v-for="el in navigate">
+                            <li><a href="#">{{el}}</a></li>
+                        </template>
+                        
+                        
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>INFORMATION</h3>
+                        </li> <br>
+                        <template v-for="el in information">
+                            <li><a href="#" v-html="el"></a></li>
+                        </template>
+                    
+                    
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>OPENING</h3>
+                        </li> <br>
+                        <template v-for="el in opening">
+                            <li>{{el.day}} <span>{{el.hour}}</span></li>
+                        </template>
+                    
+                    
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>VOUCHER</h3>
+                        </li> <br>
+                        <template v-for="el in voucher">
+                            <li><a href="#" v-html="el"></a></li>
+                        </template>
+                    
+                    
+                    </ul>
+
+
 
                 </div>
                 <div class="bottom-footer">

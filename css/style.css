@@ -62,6 +62,9 @@ button strong{
     align-items: center;
     
 }
+.logo img{
+    width: 60%;
+}
 
 
 .menu{
@@ -88,6 +91,49 @@ button strong{
     display: flex;
     justify-content: space-between;
 }
+.square{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 20px;
+    top: 140px;
+    position: fixed;
+    background-color: white;
+    color: #0d4f5c;
+    padding: 7px;
+    border-radius: 10%;
+    text-align: center;
+    box-shadow: 0 0 25px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.square small{
+    font-weight: 900;
+}
+
+
+.square-two{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 20px;
+    top: 240px;
+    position: fixed;
+    background-color: white;
+    color: #0d4f5c;
+    padding: 7px;
+    border-radius: 10%;
+    text-align: center;
+    box-shadow: 0 0 25px 5px rgba(0,0,0,0.2);
+    animation: shake 0.5s;
+    cursor: pointer;
+}
+
+.square-two small{
+    font-weight: 900;
+   
+}
+
+
 .add{
     width: 50px;
     height: 50px;
@@ -97,6 +143,7 @@ button strong{
     border-radius: 100%;
     background-color: #ce1a26;   
     position: fixed;
+    cursor: pointer;
 }
 .add > *{
     position: absolute;
@@ -140,6 +187,7 @@ button strong{
 .image-food{
     position: relative;
 }
+
 .circle{
     width: 50px;
     height: 50px;
@@ -156,12 +204,21 @@ button strong{
 }
 .add-cart{ 
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 53%;
+    left: 55%;
     transform: translate(-50%,-50%);
     opacity: 0;
     transition: 1s;
     
+}
+.add-cart h3{
+    margin-top: 10px;
+    position: relative;
+    left: 35%;
+    transform: translateX(-50%);
+}
+.add-cart h3{
+    color: white;
 }
 .image-food:hover .add-cart{
     opacity: 1;
@@ -170,6 +227,7 @@ button strong{
 .image-food:hover img {
   opacity: 0.9;
 }
+
 
 .card-food img{
     width: 370px;
@@ -318,7 +376,6 @@ footer{
 }
 .top-footer{
     height: 40%;
-    border: 1px solid yellow;
 }
 .bottom-footer{
     height: 60%;
@@ -370,3 +427,47 @@ footer{
 .bottom-footer small:nth-child(1){
     color:white
 }
+.top-footer{
+    width: 90vw;
+    margin: auto;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.top-footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+.top-footer ul{
+    list-style: none;
+}
+.top-footer li{
+    margin: 15px 0;
+}
+.top-footer h3{
+    margin-top: 50px;
+}
+.top-footer img{
+    width: 80%;
+}
+ul:nth-child(2) li:nth-child(1) a{
+    color:#fcdc31;
+}
+ul:last-child li{
+    text-align: center;
+}
+ul:last-child li h1{
+    color: #fcdc31;
+}
+ul:nth-child(4) li span{
+    color: #fcdc31;
+
+}
+ul li a:hover{
+    color: #fcdc31;
+
+}
+ul:last-child li a h2{
+    color: white;
+}
+
